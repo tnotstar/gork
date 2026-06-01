@@ -1,0 +1,25 @@
+# Compiled binary
+/gork
+
+# Tool-specific metadata
+/.antigravitycli/
+/.crush/
+
+# Go auxiliary files
+*.test
+*.out
+*.prof
+*.exe
+
+# IDEs and editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS metadata
+.DS_Store
+Thumbs.db

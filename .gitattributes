@@ -1,0 +1,17 @@
+# Set default behavior to automatically normalize line endings
+* text=auto
+
+# Go files
+*.go text eol=lf
+
+# Markdown files
+*.md text eol=lf
+
+# Go Module definition
+go.mod text eol=lf
+go.sum text eol=lf
+
+# Git configurations
+.gitignore text eol=lf
+.gitattributes text eol=lf
+.editorconfig text eol=lf
