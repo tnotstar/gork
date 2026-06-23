@@ -1,4 +1,4 @@
-.PHONY: all build clean test fmt tidy run
+.PHONY: all build clean test fmt tidy run vet deps
 
 all: fmt build
 
@@ -19,3 +19,10 @@ tidy:
 
 run: build
 	./gork -url http://localhost/pixel.gif -c 10 -d 3s
+
+vet:
+	go vet ./...
+
+deps:
+	go mod download
+
