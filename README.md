@@ -3,6 +3,22 @@
 > [!WARNING]
 > **Work In Progress (WIP)**: Gork is currently under active development and is not yet ready for production environments. APIs, configuration, and structures are subject to breaking changes.
 
+## Public Specifications
+
+Contractual design, functionality, and security parameters are documented in the local `openspec` directory:
+- [Functional Specs](file:///home/tnotstar/Workspaces/Personal/work-on-go/gork/openspec/system/system-spec.md)
+- [Architecture Details](file:///home/tnotstar/Workspaces/Personal/work-on-go/gork/openspec/system/architecture.md)
+- [Security Profile](file:///home/tnotstar/Workspaces/Personal/work-on-go/gork/openspec/system/security-profile.md)
+
+## Development Workflow
+
+### Agent Integration Workflow
+When working with AI coding agents:
+- Agents consult the root `AGENTS.md` file for global workspace design constraints.
+- Specifications must be updated in `openspec/` prior to any code modifications.
+- Local capabilities, agent commands, or custom workspace settings must remain in the private root `.agents/` folder and never leak into this public submodule repository.
+
+
 Gork is an asynchronous, high-performance HTTP web benchmarking tool written in Go. 
 
 ---
