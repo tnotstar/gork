@@ -13,9 +13,9 @@ It operates concurrently, maintaining a target level of parallel TCP connections
 Gork utilizes an automated **Agent Context Layer** stored in the `.agents/` directory to preserve codebase continuity across multiple AI agent sessions. 
 
 ### Core Documents in `.agents/`
-1. **[`sot.md`](file:///home/tnotstar/Workspaces/Personal/Gork/.agents/sot.md) (Source of Truth)**: The definitive document detailing active system components, interfaces, and packet flow boundaries.
-2. **[`adr.md`](file:///home/tnotstar/Workspaces/Personal/Gork/.agents/adr.md) (Architectural Decision Records)**: Chronological index of historic design decisions (e.g., hexagonal architecture relaxation for hot paths, zero-allocation custom C state-machine translation, lock-free linear telemetry histograms).
-3. **[`status.md`](file:///home/tnotstar/Workspaces/Personal/Gork/.agents/status.md) (Project Status)**: Details active project health, test status, verified performance metrics (e.g. 66k RPS loopback milestones), and the current engineering backlog.
+1. **[`technical-sot.md`](.agents/context/technical-sot.md) (Source of Truth)**: The definitive document detailing active system components, interfaces, and packet flow boundaries.
+2. **[`technical-adr.md`](.agents/context/technical-adr.md) (Architectural Decision Records)**: Chronological index of historic design decisions (e.g., hexagonal architecture relaxation for hot paths, zero-allocation custom C state-machine translation, lock-free linear telemetry histograms).
+3. **[`status.md`](.agents/context/status.md) (Project Status)**: Details active project health, test status, verified performance metrics (e.g. 66k RPS loopback milestones), and the current engineering backlog.
 
 ### Protocol for Incoming Agents
 * **On Startup**: **Read `sot.md` and `adr.md`** first to capture structural rules and strict performance/allocation constraints.
